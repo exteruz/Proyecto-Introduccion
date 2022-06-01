@@ -1,0 +1,142 @@
+header{
+    border-radius: 2%;
+    display: flex;
+    min-height: 70px;
+    background-color: rgba(13, 10, 83, 0.384);
+    justify-content: space-between;/*separar contenido uno a una esquina y el otro a la otra*/
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
+    }
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*margin: 0;*/
+    background: #c0bfe4;
+}
+p{
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+img{
+    max-width: 100%;
+
+}
+article.card{
+    max-width: 350px;
+    background-color: rgba(13, 10, 83, 0.25);
+    border-radius: 8px;
+    margin: 3.5rem;
+    box-shadow: 0 0 12px #d7d7d7;
+}
+section.header-card img{
+    border-radius: 8px 8px 0 0;
+    max-height: 200px;
+    height: 200px;
+    width: 100%;
+
+}
+.categoria-card{
+    margin-top: 1rem;
+    text-align: center;
+}
+.categoria-card span{
+    margin-right: 2px;
+    background: rgba(25, 0, 255,0.4);
+    color: #fff;
+    padding: .2rem .5rem;
+    border-radius: 4px;
+}
+.card footer{
+    padding: 0 1 rem;
+}
+.perfil-card{
+    display:flex;
+    align-items: center;
+}
+.img-perfil-card{
+    display: flex;
+    width: 130px;
+
+}
+.img-perfil-card img{
+    width: 50px;
+    margin: 1 rem 1 rem 1 rem 0;
+    border-radius: 50%;
+}
+.text-perfil-card{
+    display: flex;
+    flex-flow:column;
+    width: 150px;
+    
+}
+.text-perfil-card span{
+    margin-bottom: 5px;
+}
+.text-perfil-card span:nth-child(2){
+    margin-bottom: 10px;
+    color:#cfcfcf
+
+}
+.texto-card h3{
+    text-align: center;
+}
+.texto-card p{
+    text-align: center;
+}
+.card-wrap{
+    display: flex;
+    flex-flow: wrap;
+}
+
+/*.caja1{
+    float: left;
+}
+.content{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 2px 0px; 
+    margin: auto;
+    max-width: 1000px;
+
+    
+}
+
+/*.post-img-1{
+    background: url(img/cyt.jpg);
+    width: 100%;
+    height: 200px;
+}*/
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: #808080
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+    .section{
+        flex-direction: column;
+    }
+}

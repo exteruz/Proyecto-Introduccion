@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Lista de eventos</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1> lista de eventos</h1>
+            {% if object_list %}
+            {%for event in object_list%}
+            <p> {{event.name}}</p>
+            <p> {{event.id}}</p>
+            <p> {{event.Description}}</p>
+            <p> {{event.category}}</p>
+            
+            {% endfor %}
+            {% endif %}
+
+            
+        </div>
+        <div class="container">
+
+        </div>
+
+<p><i>Lista de eventos</i></p>
+    </body>
+</html>

@@ -14,7 +14,7 @@ class event(models.Model):
     place = models.CharField(max_length=200)
     points = models.IntegerField()
     date = models.DateTimeField()
-    category = models.ManyToManyField('category',)
+    category = models.ManyToManyField('category')
     def __str__(self):
         return self.name
     class Meta:

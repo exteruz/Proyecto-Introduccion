@@ -4,13 +4,20 @@
     </head>
     <body>
         <div class="header">
+            {% csrf_token %}
             <h1> lista de eventos</h1>
             {% if object_list %}
+
+            {%for category in object_list%}
+            <p> {{category.id}}</p>
+            
+            {%endfor%}
+
             {%for event in object_list%}
             <p> {{event.name}}</p>
             <p> {{event.id}}</p>
             <p> {{event.Description}}</p>
-            <p> {{event.category}}</p>
+            <p> {{event.category_id}}</p>
             
             {% endfor %}
             {% endif %}

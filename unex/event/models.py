@@ -20,6 +20,7 @@ class event(models.Model):
     class Meta:
          verbose_name = "event"
          ordering = ['name']
+    
 
 class category(models.Model):
     id = models.AutoField(primary_key=True)

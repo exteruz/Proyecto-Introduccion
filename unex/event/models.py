@@ -1,7 +1,5 @@
-
-from email.policy import default
-from subprocess import CREATE_NEW_PROCESS_GROUP
 from django.db import models
+
 
 # Create your models here.
 class event(models.Model):

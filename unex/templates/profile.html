@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>{{user.username}}</title>
+    </head>
+    <body>
+        <div class='information'>
+            <h1> {{user.username}}</h1>
+            <p> {{user.pregrado}}</p>
+
+
+
+        </div>
+        <div class="header">
+            {% csrf_token %}
+            {% if object_list %}
+
+            {%for category in object_list%}
+            <p> {{category.id}}</p>
+            
+            {%endfor%}
+
+            {%for event in object_list%}
+            <p> {{event.name}}</p>
+            <p> {{event.id}}</p>
+            <p> {{event.Description}}</p>
+            <p> {{event.category_id}}</p>
+            
+            {% endfor %}
+            {% endif %}
+
+            
+        </div>
+        <div class="container">
+
+        </div>
+
+<p><i>Lista de eventos</i></p>
+    </body>
+</html>

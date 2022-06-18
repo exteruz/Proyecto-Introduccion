@@ -1,14 +1,25 @@
+from pyexpat import model
 from django.views.generic import ListView,CreateView,UpdateView,DeleteView,DetailView
 from .models import event,category
+from user.models import user
 from .forms import eventform
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 # Create your views here.
 class eventList( LoginRequiredMixin, ListView):
-    model: event 
+    model = event 
     template_name = "../templates/event_list.html"
     queryset = event.objects.all()
+
+class ListCategoryView(LoginRequiredMixin, ListView):
+    model = event
+    template_name = '../templates/event_list.html'
+    def get_queryset(self):
+        return event.objects.prefetch_related('category_user')
+
+
+
 
 class eventCategorylist(LoginRequiredMixin, ListView):
     model = event

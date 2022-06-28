@@ -1,4 +1,8 @@
+
+
+from datetime import date
 from django.db import models
+
 
 
 # Create your models here.
@@ -11,13 +15,18 @@ class event(models.Model):
     image = models.ImageField(upload_to=  "../images",null= True,blank=True)
     place = models.CharField(max_length=200)
     points = models.IntegerField()
-    date = models.DateTimeField()
+    date = models.DateField(blank=True, null=True)
+    hour = models.TimeField(blank=True, null=True)
+    creator = models.ForeignKey(on_delete=models.CASCADE,to='user.user', related_name = "creator",null= True,blank=True)
+    
     category = models.ManyToManyField('category')
+
     def __str__(self):
         return self.name
     class Meta:
          verbose_name = "event"
          ordering = ['name']
+    
     
 
 class category(models.Model):

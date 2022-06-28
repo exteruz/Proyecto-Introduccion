@@ -9,13 +9,14 @@
             {% if object_list %}
 
             {%for category in object_list%}
-            <p> {{category.id}}</p>
+            <p> {{category.name}}</p>
             
             {%endfor%}
 
             {%for event in object_list%}
             <p> {{event.name}}</p>
             <p> {{event.id}}</p>
+            <p> {{category.name}}</p>
             <p> {{event.Description}}</p>
             <p> {{event.category_id}}</p>
             

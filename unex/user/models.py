@@ -1,4 +1,3 @@
-from tokenize import group
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from points.models import insignia,rango,reward
@@ -10,7 +9,7 @@ class user(AbstractUser):
     insignia = models.ForeignKey(insignia, on_delete=models.CASCADE,  null=True, blank=True)
     rango = models.ForeignKey(rango, on_delete=models.CASCADE, null=True, blank=True)
     reward = models.ManyToManyField(reward,  blank=True)
-    event = models.ManyToManyField(event,  blank=True)
+    event = models.ManyToManyField(event, null=True, blank=True)
     category = models.ManyToManyField(category,  blank=True)
        
     

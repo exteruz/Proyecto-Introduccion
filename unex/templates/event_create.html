@@ -17,7 +17,7 @@
             <a href="../../accounts/logout/ " class="nav-link text-reset">Cerrar sesion</a>
             <a href="../listview/" class="nav-link text-reset">Buscar eventos</a>
            </nav>
-        <div class="container" >
+        <div id="container" class="container" >
             <form  class = "form-group" style=" display:flex;  flex-direction: column; margin-left: 20%; margin-right: 20%; " method="post">
                 <h1 class="h1"> Crear evento</h1>
                 {% load crispy_forms_tags%}
@@ -30,4 +30,21 @@
            
         </div>
     </body>
+    <style>
+        #container{
+            background-color: rgb(249, 251, 252);
+            width: 50%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            border-radius: 2%;
+            padding: 2%;
+            
+        }
+        body{
+            background-image: url("https://media-exp1.licdn.com/dms/image/C4E1BAQHcUjamKgDr_Q/company-background_10000/0/1523554724860?e=2147483647&v=beta&t=muU1UPOX1MdN8OT2edTzV0hRv2fXQL3ggsRYueXdONw");
+            background-position: center center;
+            
+
+        }
+    </style>
 </html>

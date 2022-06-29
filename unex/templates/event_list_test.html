@@ -21,7 +21,7 @@
            </nav>
            {% endblock %}
 
-           <div class="container" style="display: flex; justify-content: center; align-items: center; flex-direction: column;  ">
+           <div class="container" style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 2%;  ">
             <h1>Lista de eventos</h1 class="h2">
             {%for event in events%}
             <div class="container" style="display: flex; justify-content: space-around; align-items: center; flex-direction: row;">
@@ -66,4 +66,12 @@
            
           
     </body>
+    <style>
+      h1{
+        color: white;
+      }
+      body{
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0f/Enfermer%C3%ADa_Unal_Bogot%C3%A1.JPG");
+      }
+    </style>
 </html>

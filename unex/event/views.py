@@ -11,7 +11,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 class eventList( LoginRequiredMixin, ListView):
     model = event 
     context_object_name = 'events'  # Default: object_list
-    paginate_by = 6
+    paginate_by = 4
     template_name = "../templates/event_list_test.html"
     queryset = event.objects.all()
     

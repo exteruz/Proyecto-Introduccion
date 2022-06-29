@@ -1,5 +1,6 @@
 from django import forms
 from .models import event
+from user.models import user
 from django.contrib.admin import widgets
 
 class DateTimePickerInput(forms.DateTimeInput):

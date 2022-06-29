@@ -22,4 +22,5 @@ urlpatterns = [
     path('event/',include('event.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('User/',include('user.urls'))
+    
 ]
